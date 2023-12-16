@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# Redux
+`Redux` is a pattern and library for managing and updating `application state` using events called "`actions`" . 
+It serves as a centralized store for state that need to be used across your entire application, with rules ensuring that the state can only be updated in a `preddictable` fashion.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Action - what to do (pure object)
+  Action are plain javascript `objects` that have a type field.
+  Actions only tell `what to do` , but they don't tell how to do.
+  ex - 
+     return{
+        type:"INCREMENT,
+        payload:num
+      }
 
-## Available Scripts
+# Reducer - How to do
+  Reducer are functions that take the `current state` and an `action` as arguments, and return a `new state` result.
 
-In the project directory, you can run:
 
-### `npm start`
+# store - Object which holds the state of application
+  The Redux store brings together the `state, actions, and reducers`that make up your app.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  It's important to note that you'll only have a `single store ` in Redux application
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  Every Redux store has a `single root` reducer function
 
-### `npm test`
+# Function associated with store - 
+   createStore()
+   dispatch(action)
+   getState()
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### FACTS (REDUX Principles)
+# Single course of Truth
+ - The global state of your application is stored as an object inside a `single store`.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# State is Read-Only
+  The only way to change the state is to dispatch an action
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Immutability, One-way data flow, Predictability of outcome
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Changes are Made with Pure Reducer Functions [https://www.youtube.com/watch?v=VdXGIEYZuCw&pp=ygUWcmVkdWNlciBmdW5jdGlvbiB0aGFwYQ%3D%3D]
