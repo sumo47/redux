@@ -5,8 +5,6 @@ const App = () => {
   return (
     <>
       <div className="main-div">
-
-
         <div class="container">
 
           <h1>Increment/Decrement counter</h1>
