@@ -1,13 +1,14 @@
 import React from 'react'
 
 function User(props) {
-    console.warn(props)
+  console.warn(props)
+  const {data} = props
   return (
     <div>
       <h2>
         User component
       </h2>
-      <p>{props.data.key}</p>
+      <p>{data.key}</p>
     </div>
   )
 }

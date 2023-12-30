@@ -1,0 +1,9 @@
+Components
+container
+service
+    actions
+       Actions.js
+    reducers
+       reducer.js
+       index.js (rootReducer)
+    constants
