@@ -18,6 +18,9 @@ function Home() {
                     <button>Add to cart</button>
                 </div>
             </div>
+            <div className="cart">
+             <img src="https://th.bing.com/th/id/OIP.0B9qUkgn0IAUO6e2pP0pYQHaHa?rs=1&pid=ImgDetMain" alt="" />
+            </div>
 
         </div>
     )

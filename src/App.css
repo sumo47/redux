@@ -38,11 +38,10 @@
   }
 }
 
-/* .main-container{
+.main-container{
   display: flex;
-  align-items: center;
-  justify-content: center;
-} */
+ justify-content: space-between;
+}
 
 .img-wrapper img {
   height: 100px;
@@ -57,6 +56,7 @@
 .text-wrapper {
   display: flex;
   flex-direction: column;
+  text-shadow: 1px 0px 0px;
 }
 
 .cart-wrapper {
@@ -81,4 +81,8 @@
   background-color: red;
   color: #fff
 
+}
+
+.cart img{
+  width: 100px;
 }
